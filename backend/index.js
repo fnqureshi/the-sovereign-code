@@ -48,6 +48,11 @@ const express = require('express');
 	    }
 	});
 	
+	// --- Root Endpoint for Health Check ---
+	app.get('/', (req, res) => {
+	    res.send('The Sovereign Citadel is Operational.');
+	});
+	
 	app.listen(PORT, () => {
 	    console.log(`The Sovereign Citadel is open on port ${PORT}`);
 	});
