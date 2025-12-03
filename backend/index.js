@@ -10,9 +10,9 @@ const express = require('express');
 	const PORT = process.env.PORT || 3000;
 	
 	// --- The Sovereign AI Config ---
-	// HARDCODED KEY AS REQUESTED BY THE SOVEREIGN
-	const genAI = new GoogleGenerativeAI('AIzaSyD5Ij3Cpj8zjNgQMozjPOikId73B1iq-T0');
-	const model = genAI.getGenerativeModel({ model: "gemini-2.5-pro" }); 
+	// SECURE PROTOCOL: Key retrieved from Environment Variables (Vercel)
+	const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
+	const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" }); 
 	
 	// --- The Sovereign System Prompt ---
 	const SOVEREIGN_PROMPT = `
