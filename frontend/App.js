@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 	import { StyleSheet, Text, View, TextInput, TouchableOpacity, SafeAreaView, StatusBar, ActivityIndicator } from 'react-native';
 	
-	const API_URL = 'https://your-backend-url.com/api/chat'; // Replace with Vercel URL later
+	const API_URL = 'https://the-sovereign-code.vercel.app/api/chat';
 	
 	export default function App() {
 	  const [input, setInput] = useState('');
