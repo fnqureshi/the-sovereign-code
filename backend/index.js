@@ -52,3 +52,6 @@ const express = require('express');
 	    console.log(`The Sovereign Citadel is open on port ${PORT}`);
 	});
 	
+	// --- Vercel Export ---
+	module.exports = app;
+	
