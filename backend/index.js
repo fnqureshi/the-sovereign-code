@@ -12,7 +12,7 @@ const express = require('express');
 	// --- The Sovereign AI Config ---
 	// HARDCODED KEY AS REQUESTED BY THE SOVEREIGN
 	const genAI = new GoogleGenerativeAI('AIzaSyD5Ij3Cpj8zjNgQMozjPOikId73B1iq-T0');
-	const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" }); 
+	const model = genAI.getGenerativeModel({ model: "gemini-2.5-pro" }); 
 	
 	// --- The Sovereign System Prompt ---
 	const SOVEREIGN_PROMPT = `
